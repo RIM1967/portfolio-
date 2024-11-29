@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: inter;
+}
+
+.name{
+    font-family: allura;
+}
 
 .linear {
-    animation: fadeInUp 2s ease-out forwards; /* L'animation dure 1s, effet de fondu et translation */
+    animation: fadeInUp 2s ease-out forwards; 
     opacity: 0; /* Commence avec une opacité à 0 */
     transform: translateY(20px); /* Décale les éléments un peu vers le bas au début */
   }
@@ -209,18 +216,18 @@ body{
     top: 80px;
     left: 100%;
     width: 100%;
-    min-height: 100vh;
-    display: grid;
+    min-height: 10vh;
+    display: block;
     z-index: 98;
     transition: 0.4s ease-in-out;
-
-    
+    background-color: #EA1167 ;
+    border-radius: 10px;  
 }
 
 
 
 .mobile_nav.is_active {
-    left: 0;
+    left: 80%;
 }   
 .mobile_nav a {
     display: block;
@@ -323,3 +330,7 @@ body{
     }
 }
 
+.button__text{
+    text-decoration: none;
+    color: white;
+}
