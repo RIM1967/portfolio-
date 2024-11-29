@@ -1,0 +1,157 @@
+/*MAIN*/
+
+ main{
+  height: 600px;
+ } 
+body{
+    background-size: 100%;
+    
+}
+* {
+  animation: fadeInUp 2s ease-out forwards; /* L'animation dure 1s, effet de fondu et translation */
+  opacity: 0; /* Commence avec une opacité à 0 */
+  transform: translateY(20px); /* Décale les éléments un peu vers le bas au début */
+}
+
+/* Animation pour un fondu avec un mouvement vers le haut */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); /* Départ légèrement plus bas */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* À la fin, position d'origine */
+  }
+}
+.centre {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+  }
+  
+.h1-hero.max-ch {
+    line-height: 120%;
+}
+/*------Footer css--------*/
+.footer-cont{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(38, 36, 36)   ;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 60px;
+  margin: 100px;
+
+ 
+}
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.footer-container_contact{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+
+
+}
+.footer-container_contact h1{
+     font-family: var(--main-font-family);
+     font-size: 40px;
+     font-weight: 600;
+     color:white ;
+}
+.footer-container_contact p {
+  font-family: var(--main-font-family);
+  font-size: 19px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1) ;
+  line-height: 31.5px;
+}
+.footer-container_contact img{
+  width: 70%;
+}
+.footer-container_newslatter{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+  .footer-container_newslatter p{
+     font-family: var(--main-font-family);
+     font-size: 28px;
+     font-weight: 600;
+     line-height: 42px;
+     color: rgba(255, 255, 255, 1);
+  }
+  .footer-container_newslatter input{
+     height: 40px;
+     background-color: rgb(38, 36, 36);
+     border: none;
+     border-bottom: 2px solid #000;
+    
+  }
+  #Message{
+     height: 60px;
+  }
+  .footer-container_newslatter a{
+     display: flex;
+     justify-content: center;
+     background:  rgba(255, 255, 255, 1);
+     color: var(--rest-of-text);
+     padding: 10px 20px;
+     text-decoration: none; 
+     font-family: inter;
+     font-size: 19px;
+     font-weight: 600;
+     margin-top: 1rem;
+
+  }
+
+.footer-reboot{
+  margin: 20px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgba(255, 255, 255, 1);
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--color-subtext);
+  font-family: var(--main-font-family);
+  line-height: 34px;
+
+}
+.submit:hover {
+  background-color:rgba(72, 3, 34, 1) ;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 750px){
+  .footer-container{
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    margin: 0px;
+  }
+  .footer-container_newslatter p{
+    text-align: center;
+  }
+  .footer-cont{
+    margin: 20px;
+    padding: 0 0 10px 0;
+    gap: 0;
+
+  }
+
+}
